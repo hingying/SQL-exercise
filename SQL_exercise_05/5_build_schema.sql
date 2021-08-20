@@ -9,7 +9,7 @@ CREATE TABLE Providers (
  PRIMARY KEY NOT NULL,  
  Name TEXT NOT NULL 
  );
-CREATE TABLE Provides (
+CREATE TABLE Provides1 (
  Piece INTEGER, 
  FOREIGN KEY (Piece) REFERENCES Pieces(Code),
  Provider VARCHAR(40), 
@@ -38,12 +38,12 @@ INSERT INTO Pieces(Code, Name) VALUES(2,'Screw');
 INSERT INTO Pieces(Code, Name) VALUES(3,'Nut');
 INSERT INTO Pieces(Code, Name) VALUES(4,'Bolt');
 
-INSERT INTO Provides(Piece, Provider, Price) VALUES(1,'HAL',10);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(1,'RBT',15);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(2,'HAL',20);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(2,'RBT',15);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(2,'TNBC',14);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(3,'RBT',50);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(3,'TNBC',45);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(4,'HAL',5);
-INSERT INTO Provides(Piece, Provider, Price) VALUES(4,'RBT',7);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(1,'HAL',10);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(1,'RBT',15);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(2,'HAL',20);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(2,'RBT',15);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(2,'TNBC',14);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(3,'RBT',50);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(3,'TNBC',45);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(4,'HAL',5);
+INSERT INTO Provides1(Piece, Provider, Price) VALUES(4,'RBT',7);
